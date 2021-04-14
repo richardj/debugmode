@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Debugmode",
+  "version": "1.0",
+
+  "description": "toggle debugmode on and off for when developing websites",
+
+  "icons": {
+    "48": "icons/debugmode-icon.png"
+  },
+ "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "icons/debugmode-icon.png",
+    "default_title": "Debugmode",
+    "default_popup": "popup/toggle.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_start",
+      "js": ["js/description.js"],
+      "all_frames": true,
+      "js": ["debugmode.js"]
+    }
+  ]
+}
