@@ -9,7 +9,8 @@
     "48": "icons/debugmode-icon.png"
   },
  "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "browser_action": {
     "default_icon": "icons/debugmode-icon.png",
