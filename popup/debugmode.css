@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #484848;
+    background: white;
+  }
+  h1 {
+    color: #484848;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background: #484848;
+  }
+
+  h1 {
+    color: white;
+  }
+}
