@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Debugmode",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "description": "toggle debugmode on and off for when developing websites",
 
