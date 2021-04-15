@@ -2,9 +2,7 @@
   "manifest_version": 2,
   "name": "Debugmode",
   "version": "1.0.2",
-
   "description": "toggle debugmode on and off for when developing websites",
-
   "icons": {
     "48": "icons/debugmode-icon.png"
   },
@@ -22,7 +20,6 @@
     {
       "matches": ["http://*/*", "https://*/*"],
       "run_at": "document_start",
-      "js": ["js/description.js"],
       "all_frames": true,
       "js": ["debugmode.js"]
     }
