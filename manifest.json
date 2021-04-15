@@ -21,7 +21,7 @@
       "matches": ["http://*/*", "https://*/*"],
       "run_at": "document_start",
       "all_frames": true,
-      "js": ["debugmode.js"]
+      "js": ["content_scripts/debugmode.js"]
     }
   ]
 }
