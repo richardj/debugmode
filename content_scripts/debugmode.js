@@ -10,7 +10,12 @@
 
   window.hasRun = true;
 
+  /*
+   * Insert debugging styles
+   */
+
   function insertDebugmode() {
+    removeDebugmode();
 
     const styles = `
       *, *:before, *:after {
@@ -29,8 +34,13 @@
   /**
    * Remove from the page.
    */
+
   function removeDebugmode() {
-    document.querySelector('#debugmode').remove();
+    const elements = document.querySelectorAll('#debugmode');
+
+    elements.forEach(item => {
+      item.remove();
+    });
   }
 
   /**
