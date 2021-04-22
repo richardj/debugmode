@@ -4,11 +4,10 @@
   "version": "1.0.3",
   "description": "toggle debugmode on and off for when developing websites",
   "icons": {
-    "48": "icons/debugmode-icon.png"
+    "36": "icons/debugmode-icon.png"
   },
  "permissions": [
-    "activeTab",
-    "storage"
+    "activeTab"
   ],
   "browser_action": {
     "default_icon": "icons/debugmode-icon.png",
@@ -18,10 +17,19 @@
 
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": "<all_urls>",
       "run_at": "document_start",
       "all_frames": true,
       "js": ["content_scripts/debugmode.js"]
+    }
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "detector.js"
+      ],
+      "run_at": "document_idle"
     }
   ]
 }
